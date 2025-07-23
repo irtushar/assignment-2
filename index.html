@@ -3,7 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Flower Shop</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body></body>
+
+  <body>
+    <nav class="navbar">
+      <!-- Left: Logo -->
+      <img class="logo" src="./assets/logo.png" alt="" />
+
+      <!-- Right: Menu -->
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <!-- Cart always visible -->
+        <li class="cart">
+          <a href="#" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart ($56)
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="banner">
+      <!-- Left side: Title & Text -->
+      <div class="banner-text">
+        <h1>Explore the Best Deals</h1>
+        <p>
+          Discover amazing products at unbeatable prices. Shop now and enjoy
+          fast delivery, excellent support, and more!
+        </p>
+      </div>
+
+      <!-- Right side: Image -->
+      <div class="banner-image">
+        <img src="./assets/hero-flower.png" alt="Banner Image" />
+      </div>
+    </section>
+  </body>
 </html>
