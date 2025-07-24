@@ -67,6 +67,7 @@
   gap: 200px;
   flex-wrap: wrap;
 }
+
 .banner-text {
   flex: 1;
 }
@@ -271,10 +272,9 @@
   width: 100%;
   height: auto;
   display: block;
-  filter: brightness(70%); /* Makes the image darker */
+  filter: brightness(70%);
 }
 
-/* Center text inside image */
 .deal-info {
   position: absolute;
   top: 50%;
@@ -299,8 +299,10 @@
 
 /* Join Section */
 .join-section {
-  width: 100%;
-  background: url("./assets/news-letter-bg.png") no-repeat center center/cover;
+  width: 60%;
+  margin: 80px auto;
+  background: url("./assets/news-letter-bg.png") no-repeat center center/cover,
+    #e95a08;
   padding: 80px 20px;
   display: flex;
   align-items: center;
@@ -308,6 +310,7 @@
   flex-direction: column;
   color: #fff;
   text-align: center;
+  border-radius: 10px;
 }
 
 .join-section h2 {
@@ -340,7 +343,7 @@
 
 .join-form button {
   padding: 12px 24px;
-  background-color: orangered;
+  background-color: #e95a08;
   color: white;
   border: none;
   border-radius: 5px;
@@ -362,24 +365,23 @@
 }
 
 .site-footer {
-  background: #ffffff; /* White background */
-  color: #000000; /* Black text */
+  background: #ffffff;
+  color: #000000;
   padding-top: 48px;
-  padding-bottom: 12px; /* Reduced bottom padding */
+  padding-bottom: 12px;
 }
 
 .footer-inner {
   display: flex;
-  gap: 0; /* No gap between logo and links */
+  gap: 0;
   align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin-bottom: 0; /* Remove bottom margin */
+  margin-bottom: 0;
 }
 
-/* Left */
 .footer-brand {
-  flex: 0 0 auto; /* Shrink to fit content */
+  flex: 0 0 auto;
   margin-right: 0;
 }
 .footer-logo img {
@@ -394,7 +396,6 @@
   margin: 0;
 }
 
-/* Middle (2 columns on desktop) */
 .footer-links {
   flex: 1 1 auto;
   margin-left: 0;
@@ -402,11 +403,13 @@
   grid-template-columns: repeat(2, minmax(140px, 1fr));
   gap: 16px 32px;
 }
+
 .footer-links ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .footer-links a {
   color: #000000;
   text-decoration: none;
@@ -414,22 +417,24 @@
   padding: 6px 0;
   transition: color 0.2s ease;
 }
+
 .footer-links a:hover {
   color: #38bdf8;
   text-decoration: underline;
 }
 
-/* Right (social icons) */
 .footer-social {
   flex: 0 0 220px;
   min-width: 200px;
   margin-bottom: 0;
 }
+
 .footer-social h4 {
   color: #000000;
   margin: 0 0 12px;
   font-size: 1.05rem;
 }
+
 .footer-social ul {
   list-style: none;
   margin: 0;
@@ -437,24 +442,26 @@
   display: flex;
   gap: 10px;
 }
+
 .footer-social li {
   display: inline-block;
   margin: 0;
 }
+
 .footer-social img {
   width: 24px;
   height: 24px;
   display: block;
   transition: transform 0.2s ease;
 }
+
 .footer-social a:hover img {
   transform: scale(1.2);
 }
 
-/* Bottom bar */
 .footer-bottom {
-  margin-top: 8px !important; /* Reduced top margin */
-  padding: 6px 0 8px !important; /* Reduced vertical padding */
+  margin-top: 8px !important;
+  padding: 6px 0 8px !important;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 0.9rem;
@@ -465,7 +472,6 @@
   margin: 0;
 }
 
-/* Remove bottom margin of last child in footer-inner */
 .footer-inner > *:last-child {
   margin-bottom: 0;
 }
@@ -483,7 +489,6 @@
     gap: 20px;
   }
 
-  /* Plants Grid */
   .plant-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -517,7 +522,7 @@
   }
 
   .image-logo {
-    display: none; /* Hide logo on mobile */
+    display: none;
   }
 
   .plants-content h2 {
@@ -557,5 +562,33 @@
 
   .deal-info a {
     font-size: 0.85rem;
+  }
+}
+
+/* Join Section */
+@media (max-width: 768px) {
+  .join-section {
+    width: 90%;
+    padding: 50px 15px;
+  }
+
+  .join-section h2 {
+    font-size: 2rem;
+  }
+
+  .join-form {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .join-form input[type="email"] {
+    width: 70%;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .join-form button {
+    width: 30%;
+    border-radius: 0 5px 5px 0;
   }
 }
