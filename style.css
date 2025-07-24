@@ -15,9 +15,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 32px;
-  margin: 0 auto;
+  padding: 16px 0;
   background-color: #ffffff;
+}
+
+.logo {
+  max-width: 140px;
+  height: auto;
 }
 
 .nav-links {
@@ -38,8 +42,9 @@
 }
 
 .nav-links a:hover {
-  color: #007bff;
+  color: #e95a08;
 }
+
 .cart-icon {
   display: flex;
   align-items: center;
@@ -47,6 +52,7 @@
   font-weight: 500;
   color: #333;
 }
+
 .cart-icon i {
   font-size: 18px;
 }
@@ -91,7 +97,7 @@
 /* Our Plant Section */
 .plants-section {
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 60px;
   text-align: center;
 }
 
@@ -114,12 +120,18 @@
 }
 
 .plant-card {
-  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+  border-radius: 0;
 }
 
 .plant-card img {
-  width: 322px;
+  width: 100%;
   height: 270px;
+  object-fit: cover;
 }
 
 .plant-card h3 {
@@ -138,8 +150,77 @@
   background-color: #e95a08;
   color: white;
   border: none;
+  padding: 10px 10px;
   font-weight: 500;
+  width: 100%;
   height: 50px;
-  width: 270px;
-  border-radius: 0 px;
+  cursor: pointer;
+}
+
+/* Flower & plants Lover */
+.plants-lover-section {
+  background: #fff;
+  color: #000;
+  padding: 60px 20px;
+}
+
+.plants-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 80px auto;
+  gap: 40px;
+}
+
+.plants-image {
+  flex: 1 1 45%;
+  position: relative;
+}
+
+.plants-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+.image-logo {
+  position: absolute;
+  top: -120px;
+  right: -70px;
+}
+
+.image-logo img {
+  width: 286px;
+  height: 286px;
+  object-fit: contain;
+}
+
+.plants-content {
+  flex: 1 1 50%;
+  text-align: left;
+}
+
+.plants-content h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.plants-content p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.plants-content ul {
+  margin: 0 0 20px;
+  padding-left: 18px;
+}
+
+.plants-content ul li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  list-style: disc;
 }
