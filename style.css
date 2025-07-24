@@ -9,12 +9,6 @@
   max-width: 1280px;
   margin: auto;
 }
-body {
-  font-family: "Segoe UI", sans-serif;
-  background-color: #f9f9f9;
-  margin: 0;
-  padding: 0;
-}
 
 /* Navbar */
 .navbar {
@@ -60,7 +54,7 @@ body {
 /* banner */
 .banner {
   width: 80%;
-  margin: 40px auto;
+  margin: 80px auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -92,4 +86,60 @@ body {
   max-width: 500px;
   height: auto;
   display: block;
+}
+
+/* Our Plant Section */
+.plants-section {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.plants-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.plants-section p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.plant-card {
+  background-color: #fff;
+}
+
+.plant-card img {
+  width: 322px;
+  height: 270px;
+}
+
+.plant-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.plant-card p.price {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 12px;
+}
+
+.plant-card button {
+  background-color: #e95a08;
+  color: white;
+  border: none;
+  font-weight: 500;
+  height: 50px;
+  width: 270px;
+  border-radius: 0 px;
 }
